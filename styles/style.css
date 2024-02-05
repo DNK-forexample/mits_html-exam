@@ -4,4 +4,27 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Yellowtail', cursive;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/* #endregion */
+/* #region header */
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {}
+/* #endregion */
+
+/* #region main */
+
+/* #endregion */
+
+/* #region footer */
+
 /* #endregion */
