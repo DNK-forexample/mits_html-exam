@@ -3,7 +3,7 @@
   --main-letter-color: #274c5b;
 }
 
-body, h1, h2, h3 {
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -451,7 +451,6 @@ margin: 0;
   line-height: 32.4px;
   letter-spacing: 0.36px;
 }
-.rating__stars {}
 /*#endregion*/
 
 /*#region testimonial*/
@@ -562,7 +561,6 @@ text-align: center;
 
 /*#endregion*/
 
-
 /*#region offer*/
 .offer {
   background: #274c5b;
@@ -616,13 +614,63 @@ margin-bottom: 45px;
   grid-gap: 20px;
 
 }
-.offer__card {}
-.offer__title {}
-.offer__card-img {}
-.offer__card-name {}
-.offer__card-rating {}
+/*#endregion*/
+
+/*#region eco-friendly*/
+.eco-friendly {}
+.eco-friendly__container {}
+.eco-friendly__content {
+  display: flex;
+  position: relative;
+}
+.eco-friendly__img {}
+.eco-friendly__text {
+  background-color: #fff;
+  left: 45%;
+  top: 40px;
+  z-index: 10;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  
+  flex-direction: column;
+  padding-top: 40px;
+  border-radius: 30px;
+  max-width: 618px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 59px;
+}
+.eco-friendly__subtitle {
+  padding-top: 39px;
+}
+.eco-friendly__title {
+  margin-bottom: 29px;
+}
+.eco-friendly__inner-title {
+  color: #274c5b;
+font-family: "Roboto";
+font-size: 23px;
+font-weight: 700;
+line-height: 32.2px;
+letter-spacing: 0.36px;
+text-align: left;
+text-transform: capitalize;
+margin: 0;
+}
+.eco-friendly__describe {
+  color: #525c60;
+font-family: 'Open Sans';
+font-size: 18px;
+font-weight: 400;
+line-height: 32.4px;
+letter-spacing: 0.36px;
+text-align: left;
+margin-bottom: 9px;
+}
 
 /*#endregion*/
+
 /* #endregion  ----------------------------------------------------------*/
 
 /* #region footer  ----------------------------------------------------------*/
