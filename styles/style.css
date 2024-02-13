@@ -57,12 +57,12 @@ a.active {
   background: url(../images/header__background.jpeg);
   background-position: center top;
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute; */
   width: 100vw;
   left: 0;
   top: 0;
   z-index: 20;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .header__container {
@@ -71,7 +71,7 @@ a.active {
   min-height: 152px;
   background-color: #fff;
   justify-content: space-between;
-  margin-bottom: 220px;
+  /* margin-bottom: 220px; */
 }
 
 .header__logo {}
@@ -140,6 +140,10 @@ max-width: 496px;
 margin-bottom: 30px;
 }
 
+.header__button-container {
+  padding-bottom: 250px;
+}
+
 .header__button {
   background-color: #efd372;
   display: flex;
@@ -154,7 +158,7 @@ margin-bottom: 30px;
   padding: 25px 1px 25px 33px;
   align-items: center;
   gap: 24px;
-  margin-bottom: 250px;
+
 }
 
 .header__button-arrow {
@@ -167,6 +171,74 @@ margin-bottom: 30px;
 /* #region main  ----------------------------------------------------------*/
 
 /*#region get*/
+.get {
+  background-color: #fff;
+}
+.get__container {
+  padding-top: 140px;
+  /* display: flex; */
+  align-items: center;
+}
+
+.get__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 665px);
+  grid-template-rows: 378px;
+  gap: 50px;
+  margin-bottom: 140px;
+}
+
+.get__card {
+  padding: 55px;
+  
+}
+
+.get__card-1 {
+  background: url(../images/get__card-1.jpeg);
+}
+
+.get__card-2 {
+  background: url(../images/get__card-2.jpeg);
+}
+
+.get__subtitle {
+font-family: 'Yellowtail';
+font-weight: 400;
+font-size: 36px;
+line-height: 64px;
+letter-spacing: 0.36px;
+color: var(--main-letter-color);
+}
+
+.get__title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
+  color: var(--main-letter-color);
+  }
+
+.get__card-1 .get__subtitle,
+.get__card-1 .get__title {
+  color: #fff;
+}
+
+.get__card-2 .get__subtitle {
+  color:#7eb693
+}
+
+.get__card-1 .get__title {
+  max-width: 219px;
+ }
+
+.get__card-2 .get__title {
+ max-width: 264px;
+}
+
+/*#endregion*/
+
+/*#region about*/
 
 /*#endregion*/
 
