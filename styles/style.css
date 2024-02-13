@@ -567,18 +567,60 @@ text-align: center;
 .offer {
   background: #274c5b;
   padding-top: 139px;
+  padding-bottom: 160px;
 }
 .offer__container {}
 .offer__header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.offer__products {}
+.offer__products {
+  display: flex;
+  justify-content: space-between;
+}
 .offer__subtitle {}
 .offer__title {
   color: #fff;
 }
+.offer__button {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 9px 20px 33px;
+  text-align: center;
+  color: #274c5b;
+  min-width: 267px;
 
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.36px;
+text-align: left;
+text-transform: capitalize;
+box-sizing: border-box;
+border: 1px solid rgb(239, 211, 114);
+border-radius: 16px;
+
+background: rgb(239, 211, 114);
+margin-bottom: 45px;
+}
+.offer__button-arrow {
+  background: #335b6b;
+  padding: 12px 10px;
+  border-radius: 50%;
+}
+.offer__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 447px);
+  grid-template-rows: 590px;
+  grid-gap: 20px;
+
+}
+.offer__card {}
+.offer__title {}
+.offer__card-img {}
+.offer__card-name {}
+.offer__card-rating {}
 
 /*#endregion*/
 /* #endregion  ----------------------------------------------------------*/
