@@ -290,7 +290,7 @@ color: var(--main-letter-color);
 /*#region food*/
 .food {
   background-color: #fff;
-  padding-top: 162px;
+  padding-top: 122px;
 }
 .food__cards {
   display: grid;
@@ -771,7 +771,6 @@ label {
 .contacts__utility {
   border-left: 2px solid #d5d5d5;
   padding-left: 19px;
- 
 }
 .contacts__utility h4 {
   margin-bottom: 20px;
