@@ -1,3 +1,4 @@
+@import './media.css';
 /* #region reset---------------------------------------------------------------------*/
 :root {
   --main-letter-color: #274c5b;
@@ -66,7 +67,6 @@ a.active {
 }
 /* #endregion ----------------------------------------------------------*/
 /* #region header ---------------------------------------------------------- */
-
 .header {
   background: url(../images/header__background.jpeg);
   background-position: center center;
@@ -175,9 +175,11 @@ a.active {
 }
 .get__card-1 {
   background: url(../images/get__card-1.jpeg);
+
 }
 .get__card-2 {
   background: url(../images/get__card-2.jpeg);
+
 }
 .get__subtitle {
 color: var(--main-letter-color);
@@ -624,7 +626,7 @@ color: var(--main-letter-color);
 }
 label {
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 50px;
   font-weight: 700;
   line-height: 60px;
@@ -642,7 +644,6 @@ label {
   text-align: left;
   padding: 30px;
 }
-
 .form__button {
   box-sizing: border-box;
   border: 1px solid #274c5b;
@@ -682,7 +683,6 @@ label {
   align-items: center;
   justify-content: space-between;
 }
-
 .contacts__contact-us {
   padding-right: 19px;
   text-align: right;
@@ -695,7 +695,7 @@ label {
 }
 .contacts__contact-us-item a {
   color: rgb(82, 92, 96);
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -768,7 +768,7 @@ label {
 }
 /*utility----------------------*/
 .contacts__utility {
-  border-left: 1px solid #d5d5d5;
+  border-left: 2px solid #d5d5d5;
   padding-left: 19px;
  
 }
@@ -778,7 +778,7 @@ label {
 }
 .contacts__utility-list {
   padding: 0;
-  transform: translatex(-15px);
+  transform: translateX(-15px);
 }
 .contacts__utility-item {
  
