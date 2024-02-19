@@ -83,6 +83,10 @@ a.active {
   background-color: #fff;
   justify-content: space-between;
 }
+.burger__checkbox,
+.burger {
+  display: none;
+}
 .header__menu {
   margin: 0 0 0 26px;
 }
@@ -99,7 +103,11 @@ a.active {
   color: var(--main-letter-color);
   font-size: 19px;
   line-height: calc(32 / 14 * 100%);
-  letter-spacing: 0.36px
+  letter-spacing: 0.36px;
+  transition: .3s ease-in-out;
+}
+.menu__link:hover {
+  color: #7eb693;
 }
 .header__basket {
   display: flex;
@@ -117,6 +125,9 @@ a.active {
   background: var(--main-letter-color);
   padding: 12px;
   border-radius: 50%;
+}
+.header__basket-cart {
+  color: var(--main-letter-color);
 }
 .header__subtitle {
   color:#7eb693;
@@ -146,6 +157,10 @@ a.active {
   padding: 25px 1px 25px 33px;
   align-items: center;
   gap: 24px;
+  transition: .3s ease-in-out;
+}
+.header__button:hover {
+ transform: scale(1.02);
 }
 .header__button-arrow {
   background-color: var(--main-letter-color);
@@ -278,6 +293,10 @@ color: var(--main-letter-color);
   font-size: 19px;
   line-height: 32px;
   letter-spacing: 0.6px;
+  transition: .3s linear;
+}
+.about__button:hover {
+  transform: scale(1.02);
 }
 
 .button__arrow {
@@ -306,6 +325,10 @@ color: var(--main-letter-color);
   border-radius: 30px;
   box-sizing: border-box;
   padding: 30px;
+  transition: .3s linear;
+}
+.food__card:hover {
+  transform: scale(1.04);
 }
 .food__title {
   background-color: #274c5b;
@@ -491,6 +514,10 @@ color: var(--main-letter-color);
 
   background: rgb(239, 211, 114);
   margin-bottom: 45px;
+  transition: .3s linear;
+}
+.offer__button:hover {
+  transform: scale(1.02);
 }
 .offer__button-arrow {
   background: #335b6b;
@@ -579,6 +606,10 @@ color: var(--main-letter-color);
 }
 .gallery__card {
   position: relative;
+  transition: .3s linear;
+}
+.gallery__card:hover {
+  transform: scale(1.04);
 }
 .gallery__title {
   position: absolute;
@@ -662,6 +693,10 @@ label {
   min-width: 197px;
   min-height: 82px;
   position: relative;
+  transition: .3s linear;
+}
+.form__button:hover {
+  transform: scale(1.02);
 }
 .form__button-arrow {
   position: absolute;
@@ -669,6 +704,10 @@ label {
   left: 89.7%;
   padding: 12px 10px;
   border-radius: 50%;
+  transition: .3s linear;
+}
+.form__button:hover ~ .form__button-arrow {
+  transform: rotate(360deg);
 }
 .contacts__content {
   display: flex;
@@ -708,6 +747,10 @@ label {
 }
 .contacts__contact-us-item {
   margin-bottom: 38px;
+  transition: .3s linear;
+}
+.contacts__contact-us-item:hover {
+  transform: scale(1.02);
 }
 .contacts__utility {
   text-align: left;
@@ -749,6 +792,10 @@ label {
 }
 .contacts__social-item {
   width: 40px;
+  transition: .3s linear;
+}
+.contacts__social-item:hover {
+  transform: scale(1.1);
 }
 .contacts__social-link {
   box-sizing: border-box;
@@ -757,6 +804,7 @@ label {
   border-radius: 50%;
   width: 60px;
 }
+
 .contacts__concept p {
   color: #525c60;
   font-family: 'Open Sans';
@@ -781,7 +829,6 @@ label {
   transform: translateX(-15px);
 }
 .contacts__utility-item {
- 
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
@@ -789,11 +836,14 @@ label {
   letter-spacing: 0.36px;
   text-align: left;
   margin-bottom: 24px;
+  transition: .3s linear;
+}
+.contacts__utility-item:hover {
+  transform: scale(1.02);
 }
 .contacts__utility-link {
   color: #525c60;
 }
-
 iframe {
   margin: 0 auto;
   width: 100%;

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/media.css">
-    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,27 +20,44 @@
       <header class="header">
         <div class="header__container _container">
           <a href="#" class="header__logo">
-            <img src="./images/logo.png" alt="logo icon" class="header__logo-img"/>
+            <img
+              src="./images/logo.png"
+              alt="logo icon"
+              class="header__logo-img"
+            />
           </a>
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link active">Home</a>
-              </li>
-              <li class="menu__item">
-                <a href="#about-us" class="menu__link">About Us</a>
-              </li>
-              <li class="menu__item">
-                <a href="#food" class="menu__link">Shop</a>
-              </li>
-              <li class="menu__item">
-                <a href="#offer" class="menu__link">Pages</a>
-              </li>
-              <li class="menu__item">
-                <a href="#contact-us" class="menu__link">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="menu__wrapper">
+            <input
+              type="checkbox"
+              name=""
+              class="burger__checkbox"
+              id="burger1"
+            />
+            <label for="burger1" class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link active">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#about-us" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#food" class="menu__link">Shop</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#offer" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contact-us" class="menu__link">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="header__basket">
             <a href="#" class="header__basket-img">
               <img src="./svg/header_basket.svg" alt="basket icon" />
@@ -461,7 +478,7 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="_container">
-            <form action="POST" class="footer__form">
+            <form class="footer__form" method="post">
               <label for="email"
                 >Subscribe our<br />
                 Newsletter</label
@@ -492,17 +509,21 @@
                 <ul class="contacts__contact-us-list">
                   <li class="contacts__contact-us-item">
                     <h5 class="contacts__subtitle">Email</h5>
-                    <a href="mailto:needhelp@organick.com"
+                    <a href="mailto:needhelp@organick.com" target="_blank"
                       >needhelp@organick.com</a
                     >
                   </li>
                   <li class="contacts__contact-us-item">
                     <h5 class="contacts__subtitle">Phone</h5>
-                    <a href="tel:123(1254)1452">123 (1254) 1452</a>
+                    <a href="tel:123(1254)1452" target="_blank"
+                      >123 (1254) 1452</a
+                    >
                   </li>
                   <li class="contacts__contact-us-item">
                     <h5 class="contacts__subtitle">Address</h5>
-                    <a href="https://maps.app.goo.gl/AudpmxQmcX9n7y5h7"
+                    <a
+                      href="https://maps.app.goo.gl/AudpmxQmcX9n7y5h7"
+                      target="_blank"
                       >88 Road, Brooklyn Street, USA</a
                     >
                   </li>
@@ -522,6 +543,7 @@
                           src="./svg/footer_facebook-1.svg"
                           alt=""
                           class="social__img"
+                          target="_blank"
                         />
                       </a>
                     </li>
@@ -531,6 +553,7 @@
                           src="./svg/footer_X-2.svg"
                           alt=""
                           class="social__img"
+                          target="_blank"
                         />
                       </a>
                     </li>
@@ -540,6 +563,7 @@
                           src="./svg/footer_insta-3.svg"
                           alt=""
                           class="social__img"
+                          target="_blank"
                         />
                       </a>
                     </li>
@@ -549,6 +573,7 @@
                           src="./svg/footer_pinterest-4.svg"
                           alt=""
                           class="social__img"
+                          target="_blank"
                         />
                       </a>
                     </li>
@@ -559,21 +584,29 @@
                 <h4 class="contacts__title">Utility Pages</h4>
                 <ul class="contacts__utility-list">
                   <li class="contacts__utility-item">
-                    <a href="#" class="contacts__utility-link">Style Guide</a>
+                    <a href="#" class="contacts__utility-link" target="_blank"
+                      >Style Guide</a
+                    >
                   </li>
                   <li class="contacts__utility-item">
-                    <a href="#" class="contacts__utility-link">Protected</a>
+                    <a href="#" class="contacts__utility-link" target="_blank"
+                      >Protected</a
+                    >
                   </li>
                   <li class="contacts__utility-item">
-                    <a href="#" class="contacts__utility-link"
+                    <a href="#" class="contacts__utility-link" target="_blank"
                       >Page Not Found</a
                     >
                   </li>
                   <li class="contacts__utility-item">
-                    <a href="#" class="contacts__utility-link">Changelog</a>
+                    <a href="#" class="contacts__utility-link" target="_blank"
+                      >Changelog</a
+                    >
                   </li>
                   <li class="contacts__utility-item">
-                    <a href="#" class="contacts__utility-link">Licenses</a>
+                    <a href="#" class="contacts__utility-link" target="_blank"
+                      >Licenses</a
+                    >
                   </li>
                 </ul>
               </div>
